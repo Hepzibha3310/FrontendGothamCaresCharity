@@ -1,0 +1,38 @@
+<div class="jumbotron">
+<div class="container">
+    
+    <td><button type="button" class="btn btn-primary" routerLink="/about" >Add Outlet</button></td>
+             
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>outletID</th>
+          <th>outletName</th>
+          <th>streetName</th>
+          <th>landmark</th>
+          <th>numberOfAvailableFoodPacks</th>
+          <th>numberOfVolunteersRequired</th>
+          <th>typeOfFood</th>
+          <th>dateTime</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let outlet of outlets">
+              <td>{{outlet.outletID}}</td>
+              <td>{{outlet.outletName}}</td>
+              <td>{{outlet.streetName}}</td>
+              <td>{{outlet.landmark}}</td>
+              <td>{{outlet.numberOfAvailableFoodPacks}}</td>
+              <td>{{outlet.numberOfVolunteersRequired}}</td>
+              <td>{{outlet.typeOfFood}}</td>
+              <td>{{outlet.dateTime}}</td>
+              <td><button type="button" class="btn btn-danger" (click)="onDelete(outlet.outletID)">Delete</button></td>
+              <td><button type="button" class="btn btn-success" routerLink="/outlet-create/{{outlet.outletID}}" (click)="onEdit(outlets,outlet.outletID)">Edit</button></td>
+          </tr>
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+  
