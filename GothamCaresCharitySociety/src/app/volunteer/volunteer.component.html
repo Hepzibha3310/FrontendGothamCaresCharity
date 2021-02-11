@@ -1,0 +1,79 @@
+<h3>volunteers can register here by filling in the details</h3>
+<div class="jumbotron">
+  
+<form [formGroup]="Volunteer"  (ngSubmit)="createVolunteer()" class="form-horizontal">
+
+  <div class="form-group" >
+    <label class="control-label col-sm-2">VolunteerID</label>
+    <div class="col-sm-4">
+    <input type="text" class="form-control" placeholder="Enter VolunteerID" formControlName="VolunteerID">
+  </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2">OutletId</label>
+    <div class="col-sm-4">
+    <input type="text" class="form-control" placeholder="Enter OutletID" formControlName="OutletID">
+  </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2">VolunteerName</label>
+    <div class="col-sm-4">
+    <input type="text" class="form-control" placeholder="Enter Name" formControlName="VolunteerName">
+  </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2">VolunteerAddress</label>
+    <div class="col-sm-4">
+    <input type="text" class="form-control" placeholder="Enter Address" formControlName="VolunteerAddress">
+  </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2">VolunteerPhonenumber</label>
+    <div class="col-sm-4">
+    <input type="text" class="form-control" placeholder="Enter Number" formControlName="VolunteerPhonenumber">
+  </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2">VolunteerEmail</label>
+    <div class="col-sm-4">
+    <input type="email" class="form-control" placeholder="Enter Email" formControlName="VolunteerEmail">
+  </div>
+  </div>
+
+
+  <div class="col-sm-offset-2 col-sm-4">
+  <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+  
+
+
+
+
+
+
+
+
+
+
+</form>
+
+
+
+
+
+
+</div>
+
+
+
+ 
+
+    
+
+
+
